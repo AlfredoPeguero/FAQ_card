@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container{
+    margin: auto;
+    max-width: 375px;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+}
+.container span .woman{
+    margin-top: -130px;
+    transform: translateX(-20px);
+    /* padding: 10px; */
+    width: 110%;
+}
+.container span .bg_pattern{
+    margin-top: -100px;
+    transform: translateX(10px);
+}
+.container .title{
+    text-align: center;
+    margin: 40px auto;
+    font-weight: 700;
+    font-size: 32px;
+}
+.accordion_header{
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(237, 12%, 33%);
+}
+.accordion_items .question:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.accordion_items{
+    padding: 15px;
+    margin: auto 20px;
+    width: 100%;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.accordion_items:last-of-type{
+    margin-bottom: 40px;
+}
+.container .accordion_items .answer{
+    display: none;
+    margin: 10px auto;
+    color: hsl(240, 6%, 50%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
