@@ -49,14 +49,13 @@ body {
   justify-content: space-between;
   color: hsl(237, 12%, 33%);
 }
-/* .box img{
-    display: none;
-} */
-.accordion_items .question:hover {
+.accordion_header:hover {
   color: hsl(14, 88%, 65%);
   cursor: pointer;
 }
-
+.box {
+  display: none;
+}
 .accordion_items {
   padding: 15px;
   margin: auto 20px;
@@ -68,9 +67,20 @@ body {
 }
 .container .accordion_items .answer {
   display: none;
-  margin: 10px auto;
+  margin-top: 10px;
   color: hsl(240, 6%, 50%);
 }
+.container .accordion_items.active .answer {
+  display: block;
+}
+.btn {
+  background: white;
+  border: none;
+  color: #f78f;
+  outline: none;
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -78,6 +88,8 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* media for desktop */
 @media (min-width: 1200px) {
   .container {
     max-width: 1440px;
@@ -108,21 +120,21 @@ body {
     width: 130%;
     position: absolute;
   }
-  .inner{
-      overflow: hidden;
+  .inner {
+    overflow: hidden;
   }
-  .box img{
-      position: absolute;
-      display: block;
-      top: 200px;
-      left: -150px;
+  .box img {
+    position: absolute;
+    display: block;
+    top: 200px;
+    left: -150px;
   }
-  .outer picture{
-      position: absolute;
-      width: 200%;
-     left: -440px;
-    
+  .outer picture {
+    position: absolute;
+    width: 200%;
+    left: -440px;
   }
+
   .accordion_header {
     font-size: 20px;
   }
@@ -136,7 +148,7 @@ body {
     width: 100%;
   }
   .container .accordion_items .answer {
-    font-size: 24px;
-    padding: 15px 0;
+    font-size: 12px;
+    width: 80%;
   }
 }
