@@ -18,84 +18,100 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
-    
   </head>
   <body>
     <div class="container">
-      <span>
-        <img class="woman" src="./images/illustration-woman-online-mobile.svg" alt="illustraction">
-      </span>
-      <span>
-        <img class="bg_pattern" src="./images/bg-pattern-mobile.svg" alt="bg">
-      </span>
       
+      <div class="svg_container">
+        <div class="inner">
+          <picture >
+            <source media="(min-width: 1200px)" srcset="./images/illustration-woman-online-desktop.svg">
+            <img class="woman"  src="./images/illustration-woman-online-mobile.svg" alt="">
+          </picture>
+        </div>
+         <div class="outer">
+           <picture>
+            <source  media="(min-width: 1200px)" srcset="./images/bg-pattern-desktop.svg">
+            <img class="bg_pattern" src="./images/bg-pattern-mobile.svg" alt="">
+          </picture>
+         </div>
+         <div class="box">
+        <img src="./images/illustration-box-desktop.svg" alt="">
+      </div>
+      </div>
+
+
+
+
+
       <div class="title">FAQ</div>
+      <div class="accordion_container">
+        <div class="accordion_items">
+          <div class="accordion_header">
+            <div class="question">How many team members can I invite?</div>
+            <span>
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </span>
+          </div>
 
-      <div class="accordion_items">
-        <div class="accordion_header">
-          <div class="question">How many team members can I invite?</div>
-          <span>
-            <img src="./images/icon-arrow-down.svg" alt="" />
-          </span>
+          <p class="answer">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
         </div>
 
-        <p class="answer">
-          You can invite up to 2 additional users on the Free plan. There is no
-          limit on team members for the Premium plan.
-        </p>
-      </div>
+        <div class="accordion_items">
+          <div class="accordion_header">
+            <div class="question">What is the maximum file upload size?</div>
+            <span>
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </span>
+          </div>
 
-      <div class="accordion_items">
-        <div class="accordion_header">
-          <div class="question">What is the maximum file upload size?</div>
-          <span>
-            <img src="./images/icon-arrow-down.svg" alt="" />
-          </span>
+          <div class="answer">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </div>
         </div>
+        <div class="accordion_items">
+          <div class="accordion_header">
+            <div class="question">How do I reset my password?</div>
+            <span>
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </span>
+          </div>
 
-        <div class="answer">
-          No more than 2GB. All files in your account must fit your allotted
-          storage space.
+          <div class="answer">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </div>
         </div>
-      </div>
-      <div class="accordion_items">
-        <div class="accordion_header">
-          <div class="question">How do I reset my password?</div>
-          <span>
-            <img src="./images/icon-arrow-down.svg" alt="" />
-          </span>
-        </div>
+        <div class="accordion_items">
+          <div class="accordion_header">
+            <div class="question">Can I cancel my subscription?</div>
+            <span>
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </span>
+          </div>
 
-        <div class="answer">
-          Click “Forgot password” from the login page or “Change password” from
-          your profile page. A reset link will be emailed to you.
-        </div>
-      </div>
-      <div class="accordion_items">
-        <div class="accordion_header">
-          <div class="question">Can I cancel my subscription?</div>
-          <span>
-            <img src="./images/icon-arrow-down.svg" alt="" />
-          </span>
-        </div>
-
-        <div class="answer">
-          Yes! Send us a message and we’ll process your request no questions
-          asked.
-        </div>
-      </div>
-
-      <div class="accordion_items">
-        <div class="accordion_header">
-          <div class="question">Do you provide additional support?</div>
-          <span>
-            <img src="./images/icon-arrow-down.svg" alt="" />
-          </span>
+          <div class="answer">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </div>
         </div>
 
-        <div class="answer">
-          Chat and email support is available 24/7. Phone lines are open during
-          normal business hours.
+        <div class="accordion_items">
+          <div class="accordion_header">
+            <div class="question">Do you provide additional support?</div>
+            <span>
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </span>
+          </div>
+
+          <div class="answer">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </div>
         </div>
       </div>
     </div>
