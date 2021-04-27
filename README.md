@@ -1,7 +1,8 @@
 
 # tecnologies
 
--HTML
--CSS
--javascript
+#### -HTML
+
+#### -CSS
+#### -javascript
 
